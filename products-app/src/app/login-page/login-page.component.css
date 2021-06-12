@@ -1,0 +1,32 @@
+h1{
+  text-align: center;
+  color: red;
+}
+.formLogin{
+  
+width:100%;
+text-align: center;
+background-color: cornsilk;
+
+}
+.formLogin p{
+color:red;
+}
+.form-group{
+padding-top: 10px;
+}
+.user{
+  color: chocolate;
+}
+.pass{
+  color: chocolate;
+}
+
+
+
+
+
+
+.form-control{
+width: 100px;
+}

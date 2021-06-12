@@ -1,0 +1,28 @@
+<div style="text-align:center">
+    <ul *ngFor="let p of ProdData">
+       <li>
+          <ul>Image: {{p.Images}}: {{p.ListImagePath}}</ul>
+          <ul>{{p.Collection}}</ul>
+          <ul>Price: {{p.Price}}</ul>
+          <ul>ProductTitle: {{p.ProductTitle}}</ul>
+          <ul>StyleName: {{p.StyleName}}</ul>
+          <ul>StyleNumber: {{p.StyleNumber}}</ul>
+          <ul>NetQuantity: {{p.NetQuantity}}</ul>
+          <ul>ProductCode: {{p.ProductCode}}</ul>
+          <ul>AvailableSizes: {{p.AvailableSizes}}</ul>
+       </li>
+    </ul>
+</div>
+
+<select  class="drop-down"id="sort-by" (change)="sort($event)">
+    <option value="" selected disabled hidden>Sort By</option>
+    <option value="ProductTitle">ProductTitle</option>
+    <option value="Low">Show Low to High Price</option>
+    <option value="High">Show High to Low Price</option>
+</select>
+<div *ngFor="let p of ProdData">
+{{p.ProductTitle}} - {{p.Price}}
+</div><br>
+<div>
+    <button class="btn btn-primary" (click) ="fed()" >Give Your FeedBack</button>
+</div>
