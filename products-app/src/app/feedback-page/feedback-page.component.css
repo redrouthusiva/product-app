@@ -1,13 +1,21 @@
-.user{
-    color: brown;
-    box-shadow: chocolate;
-}
-.form-group{
+.feedbackBox{
+    background: #EEE;
+    padding: 30px;
+    margin-top: 30px;
     text-align: center;
-    
 }
-.title{
-    text-align: center;
-    color: chartreuse;
-    font-family: Arial, Helvetica, sans-serif;
-}
+.alert {
+    padding: 20px;
+    background-color:#006400; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  .help-block {
+    padding: 20px;
+    background-color:#f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+.formfield * {
+    vertical-align: middle;
+  }
