@@ -1,3 +1,15 @@
+<div>
+    <button class="btn btn-primary" (click) ="fed()" >Give Your FeedBack</button>
+</div>
+<select  class="drop-down"id="sort-by" (change)="sort($event)">
+    <option value="" selected disabled hidden>Sort By</option>
+    <option value="ProductTitle">ProductTitle</option>
+    <option value="Low">Show Low to High Price</option>
+    <option value="High">Show High to Low Price</option>
+</select>
+<div *ngFor="let p of ProdData">
+{{p.ProductTitle}} - {{p.Price}}
+</div><br>
 <div style="text-align:center">
     <ul *ngFor="let p of ProdData">
        <li>
@@ -14,15 +26,4 @@
     </ul>
 </div>
 
-<select  class="drop-down"id="sort-by" (change)="sort($event)">
-    <option value="" selected disabled hidden>Sort By</option>
-    <option value="ProductTitle">ProductTitle</option>
-    <option value="Low">Show Low to High Price</option>
-    <option value="High">Show High to Low Price</option>
-</select>
-<div *ngFor="let p of ProdData">
-{{p.ProductTitle}} - {{p.Price}}
-</div><br>
-<div>
-    <button class="btn btn-primary" (click) ="fed()" >Give Your FeedBack</button>
-</div>
+
